@@ -1,0 +1,308 @@
+a {
+    color: black;
+}
+
+.courseResults {
+    font-family: Inter;
+    background: no-repeat;
+
+    .title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 54px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: row nowrap;
+        overflow-x: scroll;
+        padding: 50px 130px;
+
+        .box {
+            margin: 0 20px;
+            padding: 24px;
+            width: 410px;
+            height: 440px;
+            background: linear-gradient(180deg, #ffeffd 0%, rgba(255, 239, 253, 0) 205.08%);
+            border-radius: 18px;
+
+            .box__title {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .photo {
+                    width: 72px;
+                    height: 72px;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    margin-right: 30px;
+                }
+
+                .info {
+                    .name {
+                        height: 72px;
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            width: 215px;
+                            height: 54px;
+                            background: #171836;
+                            box-shadow: inset 0px 4px 4px #000000;
+                            border-radius: 22px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            p {
+                                font-size: 14px;
+                                font-weight: 800;
+                                color: rgba(255, 255, 255, 1);
+                            }
+                        }
+                    }
+
+                    .contacts {
+                        background: url("../img/instagram.svg") no-repeat;
+                        background-size: 15px 15px;
+
+                        p {
+                            padding-left: 20px;
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            .content {
+                height: 250px;
+
+                .box__content {
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-bottom: 25px;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .interview {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    width: 110px;
+                    height: 30px;
+                    background: #ffffff;
+                    border: 1px solid #860e51;
+                    box-sizing: border-box;
+                    border-radius: 22px;
+
+                    p {
+                        color: rgba(130, 13, 78, 1);
+                        font-size: 12px;
+                        line-height: 12px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .empty {
+            width: 410px !important;
+            height: 440px !important;
+        }
+    }
+}
+
+@media (min-width: 1441px) {
+    .courseResults {
+        .title {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+        }
+
+        .boxes {
+            .box {
+                padding: 32px;
+                width: 550px;
+                height: 580px;
+                border-radius: 25px;
+
+                .box__title {
+                    margin-bottom: 50px;
+
+                    .photo {
+                        width: 96px;
+                        height: 96px;
+                    }
+
+                    .info {
+                        .name {
+                            height: 96px;
+
+                            span {
+                                width: 285px;
+                                height: 72px;
+                                border-radius: 30px;
+
+                                p {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+
+                        .contacts {
+                            background-size: 20px 20px;
+
+                            p {
+                                padding-left: 25px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .content {
+                    height: 300px;
+
+                    .box__content {
+                        font-size: 15px;
+                    }
+                }
+
+                .interview {
+                    .button {
+                        width: 145px;
+                        height: 40px;
+                        border: 2px solid #860e51;
+                        border-radius: 30px;
+
+                        p {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 513px) and (max-width: 1199px) {
+    .courseResults {
+        display: none;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 512px) {
+    .courseResults {
+        padding: 40px 0 0;
+
+        .title {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: row nowrap;
+            overflow-x: scroll;
+            padding: 25px 25px;
+
+            .box {
+                margin: 0 20px;
+                padding: 15px;
+                width: 300px;
+                height: 320px;
+
+                .box__title {
+                    .photo {
+                        width: 48px;
+                        height: 48px;
+                        margin-right: 20px;
+                    }
+
+                    .info {
+                        .name {
+                            height: 48px;
+
+                            span {
+                                width: 160px;
+                                height: 36px;
+                                border-radius: 15px;
+
+                                p {
+                                    font-size: 9px;
+                                }
+                            }
+                        }
+
+                        .contacts {
+                            background-size: 8px 8px;
+
+                            p {
+                                padding-left: 12px;
+                                font-size: 7px;
+                            }
+                        }
+                    }
+                }
+
+                .content {
+                    height: 180px;
+
+                    .box__content {
+                        font-size: 8px;
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .interview {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        width: 110px;
+                        height: 30px;
+                        background: #ffffff;
+                        border: 1px solid #860e51;
+                        box-sizing: border-box;
+                        border-radius: 22px;
+
+                        p {
+                            color: rgba(130, 13, 78, 1);
+                            font-size: 12px;
+                            line-height: 12px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .empty {
+                width: 410px !important;
+                height: 440px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,280 @@
+.coursePlan {
+    font-family: Inter;
+
+    .whiteFigure {
+        background-size: 100%;
+        background: no-repeat;
+
+        .rectangle {
+            background: no-repeat;
+            background-position-y: bottom;
+            background-size: 100%;
+        }
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title__text {
+            font-weight: 600;
+            font-size: 27px;
+            line-height: 33px;
+            color: white;
+            text-align: center;
+            margin: 65px 0 0;
+        }
+
+        .title__info {
+            margin: 5px 0 10px;
+            font-family: Montserrat;
+            text-align: center;
+            font-size: 10px;
+            font-weight: 600;
+            line-height: 13px;
+
+            a {
+                text-decoration: none;
+                color: #3bf5bd;
+            }
+        }
+
+        .arrows {
+            width: 15px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 30px;
+        }
+    }
+
+    .plan__list {
+        margin-top: 30px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .item {
+            margin-bottom: 15px;
+
+            .item__main {
+                z-index: 6;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 380px;
+                height: 50px;
+                background: #1f2143;
+                border-radius: 9px;
+                color: white;
+                font-size: 15px;
+                line-height: 22px;
+
+                .item__title {
+                    font-weight: 400;
+                }
+
+                .id__box {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 33px;
+                    height: 33px;
+                    background: #282b57;
+                    border-radius: 5px;
+                    right: 10px;
+                    font-weight: 500;
+
+                    .flame {
+                        width: 100%;
+                        height: 100%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+
+            .gold {
+                background: linear-gradient(
+                    90deg,
+                    #e6d43a 0%,
+                    #f48722 0.01%,
+                    #ffa722 33.33%,
+                    #e2ff30 72.82%,
+                    #f2f556 100%
+                );
+            }
+
+            .item__footer {
+                display: none;
+                z-index: 5;
+                width: 380px;
+                background: rgba(169, 171, 200, 0.6);
+                border-radius: 9px;
+                position: relative;
+                top: -5px;
+
+                ul {
+                    list-style: none;
+                    padding: 15px 0 10px;
+
+                    li {
+                        line-height: 15px;
+                        font-size: 10px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .item__main:hover ~ .item__footer,
+            .item__footer:hover {
+                display: block;
+            }
+
+            .golder {
+                background: #fff4dd;
+            }
+        }
+    }
+}
+
+@media (min-width: 1441px) {
+    .coursePlan {
+        .title {
+            margin-top: 30px;
+
+            .title__text {
+                font-size: 36px;
+                line-height: 43px;
+            }
+
+            .title__info {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .arrows {
+                margin: 20px 0 80px;
+            }
+        }
+
+        .plan__list {
+            .item {
+                .item__main {
+                    width: 500px;
+                    height: 70px;
+                    border-radius: 12px;
+                    font-size: 20px;
+                    line-height: 30px;
+
+                    .item__title {
+                        font-weight: 400;
+                    }
+
+                    .id__box {
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 6px;
+                        right: 12px;
+                        font-weight: 600;
+                    }
+                }
+
+                .item__footer {
+                    width: 500px;
+                    border-radius: 12px;
+
+                    ul {
+                        li {
+                            line-height: 22px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 513px) and (max-width: 1199px) {
+    .coursePlan {
+        display: none;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 512px) {
+    .coursePlan {
+        .whiteFigure {
+            background: none !important;
+
+            .rectangle {
+                background: no-repeat;
+                background-position-y: bottom;
+                background-size: 100%;
+            }
+        }
+
+        .title {
+            .title__text {
+                font-size: 20px;
+                line-height: 24px;
+                margin: 30px 0 0;
+            }
+
+            .title__info {
+                margin: 5px 0 10px;
+                font-size: 6px;
+                line-height: 8px;
+            }
+
+            .arrows {
+                display: none;
+            }
+        }
+
+        .plan__list {
+            .item {
+                margin-bottom: 9px;
+
+                .item__main {
+                    width: 220px;
+                    height: 30px;
+                    border-radius: 5px;
+                    font-size: 9px;
+                    line-height: 14px;
+
+                    .id__box {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 3px;
+                        right: 5px;
+                        font-weight: 600;
+
+                        .flame {
+                            width: 100%;
+                            height: 100%;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                }
+
+                .item__footer {
+                    width: 220px;
+
+                    ul {
+                        li {
+                            line-height: 12px;
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

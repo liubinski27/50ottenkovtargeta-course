@@ -1,0 +1,242 @@
+.courseFor {
+    font-family: Inter;
+
+    .title {
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 33px;
+        color: white;
+        text-align: center;
+        margin: 65px 0 30px;
+    }
+
+    .circles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 50px;
+
+        .circle {
+            width: 120px;
+            height: 120px;
+            background-size: 100%;
+            background: no-repeat;
+            background-position: center;
+
+            .people {
+                width: 100%;
+                height: 100%;
+                background-size: 40%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+
+    .boxes {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .box {
+            width: 270px;
+            height: 285px;
+            background: linear-gradient(180deg, #202246 0%, rgba(32, 34, 70, 0.25) 135.37%);
+            border: 0.751396px solid rgba(255, 255, 255, 0.7);
+            border-radius: 27px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .box__title {
+                width: 100%;
+                height: 40px;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    color: #3bf5bd;
+                }
+            }
+
+            .box__in__box {
+                width: 250px;
+                height: 170px;
+                background: #1f2143;
+                box-shadow: inset 0px 3.00558px 3.00558px rgba(0, 0, 0, 0.25);
+                border-radius: 27px;
+
+                .info {
+                    color: white;
+                    margin: 20px 10px;
+                    text-align: center;
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 18px;
+                }
+
+                .text {
+                    color: white;
+                    text-align: center;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1441px) {
+    .courseFor {
+        .title {
+            font-size: 36px;
+            line-height: 43px;
+        }
+
+        .circles {
+            .circle {
+                width: 155px;
+                height: 155px;
+            }
+        }
+
+        .boxes {
+            .box {
+                width: 330px;
+                height: 330px;
+                border-radius: 36px;
+
+                .box__title {
+                    h2 {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+
+                .box__in__box {
+                    width: 310px;
+                    height: 190px;
+                    border-radius: 36px;
+
+                    .info {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+
+                    .text {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 513px) and (max-width: 1199px) {
+    .courseFor {
+        display: none;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 512px) {
+    .courseFor {
+
+        .title {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 30px 0 20px;
+        }
+
+        .circles {  ////////vashe hz
+            display: none;
+            padding: 0 0;
+
+            .circle {
+                width: 60px;
+                height: 60px;
+                background-size: 10%;
+                background-position: -30px -30px;
+                background: no-repeat;
+
+                .people {
+                    width: 100%;
+                    height: 100%;
+                    background-size: 40%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        } ///////// do suda ppc
+
+        .boxes {
+            margin-top: 30px;
+            flex-direction: column;
+            align-items: center;
+
+            .box {
+                margin-bottom: 20px;
+                width: 90%;
+                height: 250px;
+                border-radius: 13px;
+
+                .box__title {
+                    width: 100%;
+                    height: 40px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    h2 {
+                        text-align: center;
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: 22px;
+                        color: #3bf5bd;
+                    }
+                }
+
+                .box__in__box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 90%;
+                    height: 170px;
+                    background: #1f2143;
+                    box-shadow: inset 0px 3.00558px 3.00558px rgba(0, 0, 0, 0.25);
+                    border-radius: 27px;
+
+                    .info {
+                        width: 90%;
+                        color: white;
+                        margin: 20px 10px;
+                        text-align: center;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 18px;
+                    }
+
+                    .text {
+                        width: 90%;
+                        color: white;
+                        text-align: center;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

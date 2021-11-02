@@ -1,0 +1,373 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat/Montserrat-Light.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter/Inter-ExtraBold.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter/Inter-Bold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter/Inter-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter/Inter-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter/Inter-Light.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter/Inter-ExtraLight.ttf);
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-size: 81%;
+
+  .container {
+    margin: 0 auto;
+
+    .main__flex {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.main {
+  .error {
+    padding-top: 150px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    h2 {
+      font-weight: 800;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      padding-top: 15px;
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+
+  font-family: Montserrat;
+
+  .bg__rectangle {
+    background-repeat: no-repeat;
+  }
+
+  .bg__rocket {
+    background-repeat: no-repeat;
+    background-position: 1100px;
+    padding-top: 75px;
+  }
+
+  .bg__blot {
+    background-repeat: no-repeat;
+    background-position: 1400px 470px;
+  }
+
+  .bg__figure {
+    background-repeat: no-repeat;
+  }
+
+  .bg__stars {
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 100px 0px;
+  }
+
+  .bg__photo {
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    padding-bottom: 145px;
+  }
+
+  .bg__socials {
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+  }
+
+  .title {
+    color: white;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .title__info {
+    width: 100%;
+    text-align: right;
+    color: #f5453d;
+    line-height: 27px;
+    font-weight: 600;
+    font-size: 23px;
+  }
+
+  .text__info {
+    margin-top: 75px;
+    width: 510px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .buttons {
+    margin-top: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .btn__buy,
+    .btn__plan {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 235px;
+      height: 70px;
+      background: linear-gradient(180deg, rgba(76, 94, 157, 0.8) -32.08%, rgba(23, 24, 54, 0.8) 127.36%);
+      border-radius: 15px;
+      border: 2px solid #f5453d;
+      transition: 0.5s;
+    }
+
+    .btn__buy:hover,
+    .btn__plan:hover {
+      cursor: pointer;
+      border: 2px solid yellow;
+    }
+
+    .btn__buy:active,
+    .btn__plan:active {
+      border: 1px solid yellow;
+    }
+
+    .btn__plan {
+      margin-left: 40px;
+    }
+
+    p {
+      color: white;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 22px;
+      text-shadow: 0px 3.00558px 3.00558px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .App {
+    .container {
+      width: 1440px;
+    }
+
+    .title {
+      font-size: 80px;
+      line-height: 98px;
+    }
+
+    .title__info {
+      font-size: 30px;
+    }
+
+    .text__info {
+      width: 685px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .buttons {
+      margin-top: 75px;
+
+      .btn__buy,
+      .btn__plan {
+        width: 310px;
+        height: 90px;
+        border-radius: 20px;
+      }
+
+      .btn__plan {
+        margin-left: 100px;
+      }
+
+      p {
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+        text-shadow: 0px 3.00558px 3.00558px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .App {
+    .container {
+      width: 1200px;
+    }
+  }
+}
+
+@media (min-width: 513px) and (max-width: 1199px) {
+  .App {
+    background: none!important;
+    .main {
+      .error {
+        color: #5a1c6f;
+        display: flex;
+      }
+    }
+
+    .bg__rectangle {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 512px) {
+  .App {
+    background: url("./img/background.jpg");
+    background-size: 500%;
+
+    .container {
+      width: 360px;
+    }
+  }
+
+  .main {
+    .bg__rectangle {
+      background-size: 110%;
+    }
+
+    .bg__rocket {
+      background-size: 50%;
+      background-position: right;
+      padding-top: 40px;
+    }
+
+    .bg__blot {
+      background-position-x: right;
+    }
+
+    .bg__figure {
+      background-size: 60%;
+      background-position-y: 30px;
+    }
+
+    .bg__stars {
+      background-size: 50%;
+      background-position: 10px 30px;
+    }
+
+    .bg__photo {
+      background-size: 50%;
+      background-position: 0 23px;
+      padding-bottom: 0px;
+    }
+
+    .bg__socials {
+      background-size: 40%;
+      background-position: 20px 45px;
+    }
+
+    .title {
+      font-size: 20px;
+      line-height: 22px;
+      margin-right: 10px;
+    }
+
+    .title__info {
+      line-height: 9px;
+      font-size: 7px;
+      margin-right: 10px;
+    }
+
+    .text__info {
+      margin-top: 40px;
+      width: 130px;
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    .buttons {
+      margin-top: 40px;
+      width: 100%;
+      justify-content: center;
+
+      .btn__buy,
+      .btn__plan {
+        width: 110px;
+        height: 35px;
+        border-radius: 7px;
+        transition: 0s;
+      }
+
+      .btn__plan {
+        margin-left: 20px;
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 11px;
+        text-shadow: 0px 3.00558px 3.00558px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
